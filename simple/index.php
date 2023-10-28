@@ -31,7 +31,7 @@
         if ($result && mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
-                echo "<td>" . $row['name'] . "</td>";
+                echo "<td>". $row['name'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
                 echo "<td>";
                 echo "<a href='edit.php?id=" . $row['id'] . "'>Edit</a> | ";

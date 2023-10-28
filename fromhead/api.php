@@ -28,8 +28,6 @@ $users = [
             while($item = $result->fetch_assoc()){
                 $arrdata = $item;
             }
-
-
             echo json_encode($arrdata);
 
         }
