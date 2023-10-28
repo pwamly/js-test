@@ -15,7 +15,7 @@ function fetchData(url, containerId) {
             // Iterate through the array of objects and create table rows for each object
             data.forEach((item) => {
                 const row = document.createElement('tr');
-                row.innerHTML = `<td>${item.id}</td><td>${item.name}</td>`;
+                row.innerHTML = `<td>${'item.id'}</td><td>${item.name}</td>`;
                 tbody.appendChild(row);
             });
 
@@ -27,9 +27,18 @@ function fetchData(url, containerId) {
 }
 
 // Fetch user data from the API and render it in a table in the 'user-list' div
-fetchData('https://localhost/js-test/api/index.php/users', 'user-list');
+fetchData('https://localhost/js-test/api/index.php/users-db', 'user-list');
 
     // Fetch place data from the API and display it
 fetchData('https://localhost/js-test/api/index.php/places', 'place-list');
 
+const testbtn = document.getElementById("btn");
+
+testbtn.addEventListener('click',function(){
+    alert('hello')
+})
+
+function dem(){
+    alert('help');
+}
     

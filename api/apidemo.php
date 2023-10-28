@@ -12,4 +12,5 @@
     <div id="place-list"></div>
 
     <script src="script.js"></script></body>
+    <button id='btn'>test</button>
 </html>
